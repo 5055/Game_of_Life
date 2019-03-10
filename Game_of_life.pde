@@ -1,6 +1,7 @@
 cell[][] cell;
 int tile =10;
-int count= 50;;
+int count= 50;
+int ticks_per_update =10;
 
 boolean timestop;
 int t=0;
@@ -29,7 +30,7 @@ void draw(){
     }
     }
   if(!timestop){
-  if(t%10 ==1){
+  if(t%ticks_per_update ==0){
 
         for(int i =0; i<count; i++){
       for(int j =0; j<count; j++){
